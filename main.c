@@ -5,32 +5,32 @@ typedef unsigned int uint;
 void time_clock();
 int main()
 {
-    printf("°´ÏÂs¼ü¿ªÊ¼¼ÆÊ±");
+    printf("æŒ‰ä¸‹sé”®å¼€å§‹è®¡æ—¶");
     char ch=getchar();
-    if(ch=='s')
+    if(ch == 's')
         time_clock();
-    else if(ch==27)
+    else if(ch == 27)
         exit(0);
     return 0;
 }
 void time_clock()
 {
-    uint hour=0,min=0,sed=0;
+    uint hour = 0,min = 0,sed = 0;
     do
     {
         printf("%dhour%dmin%dsed",hour,min,sed);
         sleep(1);
         sed++;
         system("cls");
-        if(sed>59)
+        if(sed > 59)
         {
             min++;
-            sed=0;
+            sed = 0;
         }
         if(min>59)
         {
             hour++;
-            min=0;
+            min = 0;
         }
     }while(1);
 
