@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
+#include <unistd.h>
 typedef unsigned int uint;
 void time_clock();
 int main()
